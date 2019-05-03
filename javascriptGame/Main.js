@@ -14,17 +14,15 @@ function Update(){
     lastUpdate = now;                             //
     ctx.clearRect(0,0,CanvasWidth, CanvasHeight); //
     ////////////////////////////////////////////////
-    //https://stackoverflow.com/questions/7790725/javascript-track-mouse-position
-    document.onmousemove
-    
-    console.log(GetMousePos());
     Draw();
-    //console.log("");
+
     //Reloop Update
     window.requestAnimationFrame(Update);
 }
-//ONLY USE KEYBOARD() ONCE!!!
-Keyboard();
+//ONLY CALLED ONCE!!!
+Keyboard();     //Use a,b,c,d asf
+GetMousePos();  //MXPos, MYPos
+
 
 //Start Update
 Update();
