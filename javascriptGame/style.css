@@ -1,8 +1,9 @@
 body{
     margin:0;
+    background-color: black;
 }
 canvas{
     height:600px;
     width:800px;
-    background-color: red;
+    background-color: white;
 }
